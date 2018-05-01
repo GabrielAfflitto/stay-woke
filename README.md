@@ -1,24 +1,21 @@
-# README
+# STAY WOKE 👀
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application was created to keep all of my applications on Heroku awake. As you all probably know, if you have the basic plan on Heroku you can only host 5 applications at once. On top of that, each application goes to sleep after about 30 minutes of not being used, so when someone wants to visit your project on Heroku they take quite a while to start up, and nobody has time for that. My solution to that was to schedule a cron job by creating a rake task using the whenever gem.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+To see how this application works firsthand, start by cloning this repository
 
-* System dependencies
+      `git clone git@github.com:GabrielAfflitto/stay-woke.git`
 
-* Configuration
+then let's go into the repository
 
-* Database creation
+      `cd stay-woke`
 
-* Database initialization
+run bundle
 
-* How to run the test suite
+      `bundle`
 
-* Services (job queues, cache servers, search engines, etc.)
+then let's go into `app/lib/tasks/wake_apps.rake` and change our urls from inside our rake task to the urls of your choice. Preferably the applications hosted on your Heroku account.
 
-* Deployment instructions
-
-* ...
+![alt text](/app/assets/images/rake.png)
