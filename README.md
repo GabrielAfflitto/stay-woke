@@ -19,3 +19,9 @@ run bundle
 then let's go into `app/lib/tasks/wake_apps.rake` and change our urls from inside our rake task to the urls of your choice. Preferably the applications hosted on your Heroku account.
 
 ![alt text](/app/assets/images/rake.png)
+
+then let's go ahead and start the server
+
+`rails s`
+
+If you visit your dashboard on Heroku, you should see that all your applications have all been awakened!
